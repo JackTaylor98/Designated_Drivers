@@ -3,7 +3,11 @@
   "resourceVersion": "1.6",
   "name": "Designated Drivers",
   "resources": [
+    {"id":{"name":"Scripts","path":"scripts/Scripts/Scripts.yy",},"order":0,},
+    {"id":{"name":"obj_car","path":"objects/obj_car/obj_car.yy",},"order":0,},
     {"id":{"name":"spr_carwheel","path":"sprites/spr_carwheel/spr_carwheel.yy",},"order":0,},
+    {"id":{"name":"spr_car","path":"sprites/spr_car/spr_car.yy",},"order":1,},
+    {"id":{"name":"obj_wheel","path":"objects/obj_wheel/obj_wheel.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
@@ -17,7 +21,7 @@
     {"name":"Windows","path":"options/windows/options_windows.yy",},
     {"name":"operagx","path":"options/operagx/options_operagx.yy",},
   ],
-  "defaultScriptType": 0,
+  "defaultScriptType": 1,
   "isEcma": false,
   "configs": {
     "name": "Default",
