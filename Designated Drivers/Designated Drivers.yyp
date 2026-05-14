@@ -3,6 +3,7 @@
   "resourceVersion": "1.6",
   "name": "Designated Drivers",
   "resources": [
+    {"id":{"name":"spr_carwheel","path":"sprites/spr_carwheel/spr_carwheel.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
