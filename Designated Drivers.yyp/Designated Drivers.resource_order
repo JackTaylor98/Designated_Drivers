@@ -1,0 +1,9 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_road","order":2,"path":"objects/obj_road/obj_road.yy",},
+    {"name":"obj_wheel","order":1,"path":"objects/obj_wheel/obj_wheel.yy",},
+    {"name":"spr_background","order":2,"path":"sprites/spr_background/spr_background.yy",},
+    {"name":"spr_car","order":1,"path":"sprites/spr_car/spr_car.yy",},
+  ],
+}
