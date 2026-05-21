@@ -6,6 +6,7 @@
     {"id":{"name":"Scripts","path":"scripts/Scripts/Scripts.yy",},"order":0,},
     {"id":{"name":"obj_car","path":"objects/obj_car/obj_car.yy",},"order":0,},
     {"id":{"name":"spr_carwheel","path":"sprites/spr_carwheel/spr_carwheel.yy",},"order":0,},
+    {"id":{"name":"obj_road","path":"objects/obj_road/obj_road.yy",},"order":2,},
     {"id":{"name":"spr_car","path":"sprites/spr_car/spr_car.yy",},"order":1,},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":2,},
     {"id":{"name":"obj_wheel","path":"objects/obj_wheel/obj_wheel.yy",},"order":1,},
