@@ -1,21 +1,21 @@
-if (keyboard_check_pressed("A")) // Turn left
+if (keyboard_check_direct(vk_right)) // Turn left
 {
-	x -= turningForce;
+	x += turningForce;
 	turnLeft = true;
 }
 else {turnLeft = false}
 
-if (keyboard_check_pressed("A")) // Turn right
+if (keyboard_check_direct(vk_left)) // Turn right
 {
-	x += turningForce;
+	x -= turningForce;
 	turnRight = true;
 }
 else {turnRight = false}
 
 with (obj_wheel) // Spin wheel
 {
-	if (turnLeft) {direction -= obj_car.turningForce}
-	else if (turnRight) {direction += obj_car.turningForce}
+	if (obj_car.turnLeft) {direction -= obj_car.turningForce}
+	else if (obj_car.turnRight) {direction += obj_car.turningForce}
 	else {direction = 0}
 }
 
