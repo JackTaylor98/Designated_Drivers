@@ -1,4 +1,6 @@
-if (keyboard_check_direct(vk_right)) // Turn left
+if(canDrive) //Will be toggled for certain distractions
+{
+	if (keyboard_check_direct(vk_right)) // Turn left
 	{
 		x += turningForce;
 		turnLeft = true;
@@ -11,6 +13,7 @@ if (keyboard_check_direct(vk_right)) // Turn left
 		turnRight = true;
 	}
 	else {turnRight = false}
+}
 
 // Logic for random pulling left/right
 timeUntilPulltimer++
