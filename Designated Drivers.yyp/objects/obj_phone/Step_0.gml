@@ -59,5 +59,6 @@ if (returning)
 		obj_phoneDecline.visible = true;
 		obj_phonePickUp.visible = true;
 		image_index = 0;
+		obj_car.canDrive = true;
 	}
 }
