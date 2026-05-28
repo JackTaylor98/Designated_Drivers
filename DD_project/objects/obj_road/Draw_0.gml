@@ -42,7 +42,7 @@ if (obj_levelmanager.playing)
 		//div 20 = groups pixels into chunks
 		//mod 2 = alternates on/off
 
-	    if (((i + line_offset) div 20) mod 2 == 0)
+	    if (((i - line_offset) div 20) mod 2 == 0)
 	    {
 	        draw_set_color(c_white);
 
