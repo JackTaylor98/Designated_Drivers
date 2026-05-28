@@ -6,11 +6,11 @@ if (obj_levelmanager.playing)
 	var center = w * 0.5;
 
 	// makes sky
-	draw_set_color(make_color_rgb(120, 180, 255));
+	draw_set_color(make_color_rgb(20, 30, 80));
 	draw_rectangle(0, 0, w, h, false);
 
 	// makes grass
-	draw_set_color(make_color_rgb(40, 180, 40));
+	draw_set_color(make_color_rgb(30, 70, 30));
 	draw_rectangle(0, horizon, room_width, room_height, false);
 
 	// road
