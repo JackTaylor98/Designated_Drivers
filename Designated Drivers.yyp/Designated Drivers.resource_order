@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
+    {"name":"obj_entertainmentBar","order":6,"path":"objects/obj_entertainmentBar/obj_entertainmentBar.yy",},
     {"name":"obj_phone","order":3,"path":"objects/obj_phone/obj_phone.yy",},
     {"name":"obj_phoneDecline","order":5,"path":"objects/obj_phoneDecline/obj_phoneDecline.yy",},
     {"name":"obj_phonePickUp","order":4,"path":"objects/obj_phonePickUp/obj_phonePickUp.yy",},
@@ -9,6 +10,8 @@
     {"name":"spr_background","order":2,"path":"sprites/spr_background/spr_background.yy",},
     {"name":"spr_car","order":1,"path":"sprites/spr_car/spr_car.yy",},
     {"name":"spr_declinePhone","order":5,"path":"sprites/spr_declinePhone/spr_declinePhone.yy",},
+    {"name":"spr_entertainmentBack","order":6,"path":"sprites/spr_entertainmentBack/spr_entertainmentBack.yy",},
+    {"name":"spr_entertainmentFront","order":7,"path":"sprites/spr_entertainmentFront/spr_entertainmentFront.yy",},
     {"name":"spr_phone","order":3,"path":"sprites/spr_phone/spr_phone.yy",},
     {"name":"spr_pickUpPhone","order":4,"path":"sprites/spr_pickUpPhone/spr_pickUpPhone.yy",},
   ],

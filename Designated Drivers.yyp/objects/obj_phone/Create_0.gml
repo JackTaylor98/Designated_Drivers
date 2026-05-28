@@ -7,7 +7,7 @@ phoneTimer = irandom_range(minPhoneTimer*60, maxPhoneTimer*60);
 
 //Start y being beneath the map, end y being 2/3 down the screen
 startY = room_height + 200;
-endY = room_height / 3 * 2;
+endY = (room_height / 3 * 2) + 150;
 
 //Technically could just use start and end y, but this removes ambiguity on return
 returnStartY = endY;
@@ -22,3 +22,9 @@ y = startY;
 
 //whether the phone is returning to the bottom of the screen or not
 returning = false;
+
+entertainmentMax = 50;
+entertainmentCurrent = 50;
+entertainmentDropRate = 1.5/60;
+entertainmentIncreaseRate = 3.5/60;
+entertainmentIncrease = false;

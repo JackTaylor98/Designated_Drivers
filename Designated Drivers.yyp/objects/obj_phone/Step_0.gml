@@ -1,8 +1,17 @@
 //Every frame, decrease the phone timer until the event happens
 phoneTimer--;
-	
+
+if(!entertainmentIncrease)
+{
+	entertainmentCurrent -= entertainmentDropRate;
+}
+else if(entertainmentCurrent < entertainmentMax)
+{
+	entertainmentCurrent += entertainmentIncreaseRate;	
+}
+
 //Setting the phone x pos to follow the car
-x = obj_car.x + 90;
+x = obj_car.x + 250;
 
 //Setting the buttons to their positions on the phone
 obj_phonePickUp.x = x - 30;
@@ -52,6 +61,7 @@ if (returning)
 		travelTime = 0;
 		phoneTimer = irandom_range(minPhoneTimer * 60, maxPhoneTimer * 60);
 		y = startY;
+		entertainmentIncrease = false;
 		
 		//Reset all the button and sprite changes
 		obj_phoneDecline.disableCollision = false;
@@ -59,5 +69,7 @@ if (returning)
 		obj_phoneDecline.visible = true;
 		obj_phonePickUp.visible = true;
 		image_index = 0;
+		obj_car.canDrive = true;
 	}
 }
+

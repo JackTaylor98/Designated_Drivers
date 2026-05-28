@@ -27,6 +27,7 @@ if(!disableCollision)
 if(buttonPressed)
 {
 	conversationTimer--;
+	obj_phone.entertainmentIncrease = true;
 	if(conversationTimer <= 0)
 	{
 		with (obj_phone)
