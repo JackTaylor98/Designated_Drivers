@@ -36,8 +36,8 @@ if (obj_levelmanager.playing)
 			pullingTimer = 0;
 			timeUntilStopPull = irandom_range(4,8)*60
 		
-			pullLeft = irandom_range(0,1);
-			pullForce = random_range(2,4);
+			pullLeft = irandom_range(0, 1);
+			pullForce = random_range(1, 2.5);
 			pulling = false;
 		}
 	}

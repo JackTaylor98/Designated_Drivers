@@ -15,6 +15,6 @@ timeUntilStopPull = irandom_range(4,8)*60 // How long the pull will last
 
 pulling = false; // Bool if currently pulling or not
 pullLeft = irandom_range(0,1) // Random pulling left or right. This is a int so I can randomize it
-pullForce = random_range(2,4); // How strong the pull is
+pullForce = random_range(1, 2.5); // How strong the pull is
 
 canDrive = true; //Bool for toggling player control

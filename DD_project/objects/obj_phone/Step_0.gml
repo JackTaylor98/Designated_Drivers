@@ -2,9 +2,18 @@ if (phoneActive && obj_levelmanager.playing)
 {
 	//Every frame, decrease the phone timer until the event happens
 	phoneTimer--;
-	
+
+	if(!entertainmentIncrease)
+	{
+		entertainmentCurrent -= entertainmentDropRate;
+	}
+	else if(entertainmentCurrent < entertainmentMax)
+	{
+		entertainmentCurrent += entertainmentIncreaseRate;	
+	}
+
 	//Setting the phone x pos to follow the car
-	x = obj_car.x + 90;
+	x = obj_car.x + 250;
 
 	//Setting the buttons to their positions on the phone
 	obj_phonePickUp.x = x - 30;
@@ -20,40 +29,40 @@ if (phoneActive && obj_levelmanager.playing)
 		obj_car.canDrive = false;
 		travelTime += delta_time / 1000000;
 
-	//t handles travel time logic
-	var t = travelTime / travelDuration;
-	t = clamp(t, 0, 1);
+		//t handles travel time logic
+		var t = travelTime / travelDuration;
+		t = clamp(t, 0, 1);
 
-	//Bezier controlY point (anchor)
-	var controlY = endY - 150;
+		//Bezier controlY point (anchor)
+		var controlY = endY - 150;
 
-	//Quadratic bezier //May change to cubic bezier in the future to make it look even smoother
-	y =
-	    power(1 - t, 2) * startY +
-	    2 * (1 - t) * t * controlY +
-	    power(t, 2) * endY;
+		//Quadratic bezier //May change to cubic bezier in the future to make it look even smoother
+		y =
+		 power(1 - t, 2) * startY +
+		 2 * (1 - t) * t * controlY +
+		 power(t, 2) * endY;
 	}
 	//reverse bezier curve logic
 	if (returning)
 	{
-	    travelTime += delta_time / 1000000;
+	  travelTime += delta_time / 1000000;
+	
+	  var t = clamp(travelTime / travelDuration, 0, 1);
 
-	    var t = clamp(travelTime / travelDuration, 0, 1);
+	  var controlY = returnStartY - 150;
 
-	    var controlY = returnStartY - 150;
-
-	    y =
-	        power(1 - t, 2) * returnStartY +
-	        2 * (1 - t) * t * controlY +
-	        power(t, 2) * returnEndY;
-
+	  y =
+	    power(1 - t, 2) * returnStartY +
+	    2 * (1 - t) * t * controlY +
+		power(t, 2) * returnEndY;
 		//if the bezier curve has finished
-	    if (t >= 1)
+		if (t >= 1)
 		{
 			returning = false;
 			travelTime = 0;
 			phoneTimer = irandom_range(minPhoneTimer * 60, maxPhoneTimer * 60);
 			y = startY;
+			entertainmentIncrease = false;
 		
 			//Reset all the button and sprite changes
 			obj_phoneDecline.disableCollision = false;

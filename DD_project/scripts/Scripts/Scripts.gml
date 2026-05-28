@@ -1,7 +1,7 @@
 function CheckLossCondition() // Function for checking if player loses
 {
 	boundry = 800; // How far left or right from the center the player can drive before gameover
-	if (obj_car.x < (room_width/2)-boundry || obj_car.x > (room_width/2)+boundry)
+	if (obj_car.x < (room_width/2)-boundry || obj_car.x > (room_width/2)+boundry || obj_phone.entertainmentCurrent <= 0)
 	{
 		// Resets variables for level manager
 		obj_levelmanager.playing = false;
