@@ -18,3 +18,5 @@ pullLeft = irandom_range(0,1) // Random pulling left or right. This is a int so 
 pullForce = random_range(1, 2.5); // How strong the pull is
 
 canDrive = true; //Bool for toggling player control
+
+audio_play_sound(snd_car,1,true);

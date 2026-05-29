@@ -8,6 +8,7 @@ switch (Button_ID)
 		{
 			obj_car.x = room_width/2;
 			obj_levelmanager.playing = true;
+			audio_play_sound(snd_car,1,true);
 			with (obj_banner) // Hides banner
 			{
 				x = room_width*2
@@ -40,6 +41,7 @@ switch (Button_ID)
 			obj_car.x = room_width/2;
 			obj_levelmanager.currentLevel++;
 			obj_levelmanager.playing = true;
+			audio_play_sound(snd_car,1,true);
 			with (obj_banner) // Hides banner
 			{
 				x = room_width*2

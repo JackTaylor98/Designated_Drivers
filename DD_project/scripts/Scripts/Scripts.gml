@@ -23,13 +23,14 @@ function CheckLossCondition() // Function for checking if player loses
 		obj_levelmanager.levelTimer = 0;
 		ShowGameOverScreen(false);
 		audio_play_sound(GetRandomCarSnd(irandom_range(1,5)), 1, false)
+		audio_stop_sound(snd_car);
 	}
 }
 
 function ShowGameOverScreen(_playerWon)
 {
 	// Sets text on banner to player won/lost
-	if (_playerWon){obj_banner.playerWon = true}
+	if (_playerWon){obj_banner.playerWon = true audio_stop_sound(snd_car) audio_play_sound(snd_victory,1,false);}
 	else{obj_banner.playerWon = false}
 	
 	with (obj_gameoverbutton) // Hides next level button if player fails level
