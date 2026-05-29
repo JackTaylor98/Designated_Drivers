@@ -1,3 +1,17 @@
+function GetRandomCarSnd(_randomCar)
+{
+	// Make sure the random number rolls high
+	// enough for each case
+	switch (_randomCar)
+	{
+		case 1: {return snd_crash1; break;}
+		case 2: {return snd_crash2; break;}
+		case 3: {return snd_crash3; break;}
+		case 4: {return snd_crash4; break;}
+		case 5: {return snd_crash5; break;}
+	}
+}
+
 function CheckLossCondition() // Function for checking if player loses
 {
 	boundry = 800; // How far left or right from the center the player can drive before gameover
@@ -8,6 +22,7 @@ function CheckLossCondition() // Function for checking if player loses
 		obj_levelmanager.levelTimerReset = false;
 		obj_levelmanager.levelTimer = 0;
 		ShowGameOverScreen(false);
+		audio_play_sound(GetRandomCarSnd(irandom_range(1,5)), 1, false)
 	}
 }
 
