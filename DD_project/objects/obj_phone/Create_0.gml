@@ -25,6 +25,8 @@ returning = false;
 
 phoneActive = false;
 
+startingPosition = y;
+
 image_xscale = 5;
 image_yscale = 5;
 

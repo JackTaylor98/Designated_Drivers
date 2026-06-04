@@ -31,6 +31,11 @@ function ShowGameOverScreen(_playerWon)
 {
 	audio_pause_all();
 	LevelReset();
+	obj_car.canDrive = true; // Fixes a bug related to driving locking up after game over
+	obj_phone.y = obj_phone.startingPosition;
+	obj_phoneDecline.y = obj_phoneDecline.startingPosition;
+	obj_phonePickUp.y = obj_phonePickUp.startingPosition;
+	obj_phone.entertainmentCurrent = obj_phone.entertainmentMax;
 	
 	// Sets text on banner to player won/lost
 	if (_playerWon){obj_banner.playerWon = true audio_stop_sound(snd_car) audio_play_sound(snd_victory,1,false);}

@@ -61,7 +61,7 @@ switch (currentLevel)
 			}
 			levelTimer++;
 			LevelSetUp(false, true);
-			if (levelTimer >= level2Length)
+			if (levelTimer >= level3Length)
 			{
 				playing = false;
 				levelTimerReset = false;

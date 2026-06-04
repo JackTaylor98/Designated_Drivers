@@ -5,5 +5,5 @@ function PlayLevel1Audio()
 
 function PlayCarAudio()
 {
-	audio_play_sound(snd_car,10,false);
+	audio_play_sound(snd_car,10,true);
 }
