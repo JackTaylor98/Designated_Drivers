@@ -1,4 +1,4 @@
-currentLevel = 1;
+currentLevel = 2;
 playing = true;
 
 levelTimer = 0 // Timer for the levels

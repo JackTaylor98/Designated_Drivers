@@ -22,6 +22,7 @@ y = startY;
 
 //whether the phone is returning to the bottom of the screen or not
 returning = false;
+calling = false;
 
 phoneActive = false;
 
@@ -32,6 +33,6 @@ image_yscale = 5;
 
 entertainmentMax = 50;
 entertainmentCurrent = 50;
-entertainmentDropRate = 2.5/60;
-entertainmentIncreaseRate = 3.5/60;
+entertainmentDropRate = 7/60;
+entertainmentIncreaseRate = 5/60;
 entertainmentIncrease = false;

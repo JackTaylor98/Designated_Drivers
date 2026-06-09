@@ -11,6 +11,11 @@ if (phoneActive && obj_levelmanager.playing)
 	{
 		entertainmentCurrent += entertainmentIncreaseRate;	
 	}
+	
+	if(entertainmentCurrent <= 0)
+	{
+		entertainmentCurrent = 0;	
+	}
 
 	//Setting the phone x pos to follow the car
 	x = obj_car.x + 250;
@@ -26,6 +31,7 @@ if (phoneActive && obj_levelmanager.playing)
 	// initiate the bezier curve for phone arrival
 	if(phoneTimer <= 0 && travelTime < travelDuration && !returning)
 	{
+		calling = true;
 		obj_car.canDrive = false;
 		travelTime += delta_time / 1000000;
 
@@ -59,10 +65,12 @@ if (phoneActive && obj_levelmanager.playing)
 		if (t >= 1)
 		{
 			returning = false;
+			calling = false;
 			travelTime = 0;
 			phoneTimer = irandom_range(minPhoneTimer * 60, maxPhoneTimer * 60);
 			y = startY;
 			entertainmentIncrease = false;
+			obj_doomscroll.doomscrolling = false;
 		
 			//Reset all the button and sprite changes
 			obj_phoneDecline.disableCollision = false;

@@ -17,4 +17,13 @@ if(obj_phone.phoneActive)
 		1000 - (ox*6), 750 - (oy*6) + ((fullH - visibleH) * 6),
 		6, 6, c_white, 1);
 	}
+	
+	if(percent == 0)
+	{
+		barEmpty = true;	
+	}
+	else 
+	{
+		barEmpty = false;
+	}
 }

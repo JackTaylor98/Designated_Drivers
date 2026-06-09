@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_entertainmentBar",
-  "spriteId": null,
+  "name": "obj_doomscroll",
+  "spriteId": {
+    "name": "spr_doomScrollButton",
+    "path": "sprites/spr_doomScrollButton/spr_doomScrollButton.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -22,13 +25,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "GameUIObjects",
-    "path": "folders/Objects/GameUIObjects.yy",
+    "name": "GameObjects",
+    "path": "folders/Objects/GameObjects.yy",
   },
 }

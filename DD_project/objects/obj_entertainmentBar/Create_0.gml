@@ -1,0 +1,2 @@
+barEmpty = false;
+
