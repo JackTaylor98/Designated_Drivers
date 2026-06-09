@@ -1,3 +1,5 @@
+if(obj_levelmanager.currentLevel == 2)
+{
 if(obj_phone.phoneActive)
 {
 	x = obj_car.x - 230;
@@ -61,4 +63,10 @@ with (obj_phone)
 			 
 		image_index = 2;
 	}
+}	
+}
+else
+{
+	x = 8000;
+	y = 8000;
 }

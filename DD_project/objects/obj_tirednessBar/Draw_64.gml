@@ -1,3 +1,4 @@
+if (obj_levelmanager.currentLevel != 1)
 {
 	var percent = clamp(tiredCurrent/tiredMax, 0, 1);
 
