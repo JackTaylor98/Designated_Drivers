@@ -6,6 +6,7 @@ switch (Button_ID)
 		y = obj_banner.y + 90
 		if (ButtonClickedOn())
 		{
+			PlayButtonSound()
 			obj_car.x = room_width/2;
 			obj_levelmanager.playing = true;
 			obj_tirednessBar.tiredCurrent = obj_tirednessBar.tiredMax;
@@ -30,6 +31,7 @@ switch (Button_ID)
 		y = obj_banner.y + 90
 		if (ButtonClickedOn())
 		{
+			PlayButtonSound()
 			room_goto(RoomMainMenu)
 			with (obj_banner) // Hides banner
 			{
@@ -45,6 +47,7 @@ switch (Button_ID)
 		y = obj_banner.y + 90
 		if (ButtonClickedOn())
 		{
+			PlayButtonSound()
 			obj_car.x = room_width/2;
 			obj_tirednessBar.tiredCurrent = obj_tirednessBar.tiredMax;
 			obj_distractionBar.distractionCurrent = 1;

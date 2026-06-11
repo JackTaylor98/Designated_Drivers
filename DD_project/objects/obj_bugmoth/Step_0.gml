@@ -52,4 +52,6 @@ if (bugActive)
 			break;
 		}
 	}
-}
+} 
+
+PlayBugSound();

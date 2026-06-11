@@ -32,6 +32,7 @@ switch (currentLevel)
 			if (!levelTimerReset)
 			{
 				LevelReset()
+				PlayLevel2Audio()
 				PlayCarAudio()
 				levelTimer = 0;
 				levelTimerReset = true;
@@ -55,6 +56,7 @@ switch (currentLevel)
 			if (!levelTimerReset)
 			{
 				LevelReset()
+				PlayLevel3Audio()
 				PlayCarAudio()
 				levelTimer = 0;
 				levelTimerReset = true;
