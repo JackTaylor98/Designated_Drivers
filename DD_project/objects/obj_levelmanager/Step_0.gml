@@ -1,4 +1,4 @@
-if (currentLevel > amountOfLevels) {currentLevel = 2;} // Loops currently available levels
+if (currentLevel > amountOfLevels) {currentLevel = 1;} // Loops currently available levels
 switch (currentLevel)
 {
 	case 1: // Level 1. Just driving

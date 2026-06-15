@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_rearviewmirror",
   "spriteId": {
-    "name": "spr_rearviewmirrorcalm",
-    "path": "sprites/spr_rearviewmirrorcalm/spr_rearviewmirrorcalm.yy",
+    "name": "spr_Rearview_mirror_idle",
+    "path": "sprites/spr_Rearview_mirror_idle/spr_Rearview_mirror_idle.yy",
   },
   "solid": false,
   "visible": true,
