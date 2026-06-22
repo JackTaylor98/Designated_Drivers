@@ -22,6 +22,8 @@
     {"id":{"name":"obj_road","path":"objects/obj_road/obj_road.yy",},"order":5,},
     {"id":{"name":"spr_distractionFront","path":"sprites/spr_distractionFront/spr_distractionFront.yy",},"order":3,},
     {"id":{"name":"obj_banner","path":"objects/obj_banner/obj_banner.yy",},"order":0,},
+    {"id":{"name":"obj_youWin","path":"objects/obj_youWin/obj_youWin.yy",},"order":5,},
+    {"id":{"name":"spr_youWin","path":"sprites/spr_youWin/spr_youWin.yy",},"order":5,},
     {"id":{"name":"spr_Rearview_mirror_phonecall","path":"sprites/spr_Rearview_mirror_phonecall/spr_Rearview_mirror_phonecall.yy",},"order":11,},
     {"id":{"name":"spr_quitbutton","path":"sprites/spr_quitbutton/spr_quitbutton.yy",},"order":1,},
     {"id":{"name":"spr_Rearview_mirror_idle","path":"sprites/spr_Rearview_mirror_idle/spr_Rearview_mirror_idle.yy",},"order":8,},

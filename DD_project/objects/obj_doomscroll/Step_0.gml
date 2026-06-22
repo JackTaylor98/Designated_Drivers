@@ -1,4 +1,4 @@
-if(obj_levelmanager.currentLevel == 2)
+if(obj_levelmanager.currentLevel == 2 || obj_levelmanager.currentLevel == 4)
 {
 if(obj_phone.phoneActive)
 {

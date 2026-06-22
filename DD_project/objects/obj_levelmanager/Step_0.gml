@@ -73,4 +73,27 @@ switch (currentLevel)
 		}
 		break;
 	}
+	case 4:
+	{
+		if (playing)
+		{
+			if (!levelTimerReset)
+			{
+				LevelReset()
+				PlayCarAudio()
+				levelTimer = 0;
+				levelTimerReset = true;
+			}
+			levelTimer++;
+			LevelSetUp(true, true);
+			if (levelTimer >= level4Length)
+			{
+				playing = false;
+				levelTimerReset = false;
+				levelTimer = 0;
+				ShowGameOverScreen(true);
+			}
+		}
+		break;	
+	}
 }
