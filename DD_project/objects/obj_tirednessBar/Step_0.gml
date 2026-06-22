@@ -7,6 +7,10 @@ switch (obj_levelmanager.currentLevel)
         {
             tiredCurrent += tiredIncreaseRate;
         }
+		if (obj_phone.phoneActive && obj_phone.calling)
+		{
+			tiredCurrent += tiredIncreaseRate;
+		}
         else if (obj_entertainmentBar.barEmpty)
         {
             tiredCurrent -= tiredDroprate;
@@ -38,6 +42,10 @@ switch (obj_levelmanager.currentLevel)
             rate += tiredIncreaseRate;
         }
         if (obj_phone.phoneActive && obj_doomscroll.doomscrolling)
+        {
+            rate += tiredIncreaseRate;
+        }
+		if (obj_phone.phoneActive && obj_phone.calling)
         {
             rate += tiredIncreaseRate;
         }
