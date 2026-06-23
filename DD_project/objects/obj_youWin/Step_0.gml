@@ -6,4 +6,3 @@ else if (obj_logo.hasWon)
 {
 	visible = true;	
 }
-

@@ -2,8 +2,8 @@ switch (Button_ID)
 {
 	case "Replay":
 	{
-		x = obj_banner.x + 50
-		y = obj_banner.y + 90
+		x = obj_banner.x + obj_banner.sprite_width/2-250
+		y = obj_banner.y + 120
 		if (ButtonClickedOn())
 		{
 			PlayButtonSound()
@@ -16,6 +16,7 @@ switch (Button_ID)
 			obj_phone.entertainmentCurrent = obj_phone.entertainmentMax;
 			obj_phone.returning = true;
 			obj_bugmoth.x = 4800; obj_bugmoth.y = 440;
+			obj_phone.calling = false;
 			audio_play_sound(snd_car,1,true);
 			with (obj_banner) // Hides banner
 			{
@@ -27,8 +28,8 @@ switch (Button_ID)
 	}
 	case "Quit":
 	{
-		x = obj_banner.x + 350
-		y = obj_banner.y + 90
+		x = obj_banner.x + obj_banner.sprite_width/2+250
+		y = obj_banner.y + 120
 		if (ButtonClickedOn())
 		{
 			PlayButtonSound()
@@ -43,8 +44,8 @@ switch (Button_ID)
 	}
 	case "NextLevel":
 	{
-		x = obj_banner.x + 650
-		y = obj_banner.y + 90
+		x = obj_banner.x + obj_banner.sprite_width/2
+		y = obj_banner.y + 120
 		if (ButtonClickedOn())
 		{
 			if (obj_levelmanager.currentLevel <= 3)
@@ -57,6 +58,7 @@ switch (Button_ID)
 				obj_bugmoth.x = 4800; obj_bugmoth.y = 440;
 				obj_levelmanager.currentLevel++;
 				obj_levelmanager.playing = true;
+				obj_phone.calling = false;
 				audio_play_sound(snd_car,1,true);
 				with (obj_banner) // Hides banner
 				{
@@ -68,7 +70,6 @@ switch (Button_ID)
 			{
 				PlayButtonSound()
 				obj_logo.hasWon = true;
-				obj_logo.visible = true;
 				room_goto(RoomMainMenu);
 				with (obj_banner) // Hides banner
 				{

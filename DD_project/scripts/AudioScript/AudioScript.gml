@@ -48,6 +48,11 @@ function PlayButtonSound()
 	audio_play_sound(snd_button,1,false);
 }
 
+function PlayhitSfx()
+{
+	audio_play_sound(snd_hit,1,false);
+}
+
 // if the music isnt playing start playing it
 function PlayMenuMusic()
 {

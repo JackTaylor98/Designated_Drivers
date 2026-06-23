@@ -33,25 +33,15 @@ if (bugActive)
 					break;
 				}
 			}
-			if (ButtonClickedOnHeld()) {state = "PlayerHoldingBug";}
-			break;
-		}
-		case "PlayerHoldingBug":
-		{
-			if (ButtonClickedOnHeld())
+			if (ButtonClickedOn()) 
 			{
-				x = mouse_x;
-				y = mouse_y;
-				if (x >= obj_car.x+750) 
-				{
-					x = startingPosition;
-					state = "WaitingToFlyIn";
-				}
+				state = "WaitingToFlyIn";
+				instance_create_layer(x,y,"Instances",obj_bugseffect);
+				PlayhitSfx();
+				x = startingPosition;				
 			}
-			else {state = "Flying";}
 			break;
 		}
 	}
 } 
-
 PlayBugSound();
