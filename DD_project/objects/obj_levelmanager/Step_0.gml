@@ -7,6 +7,7 @@ switch (currentLevel)
 		{
 			if (!levelTimerReset) // Sets up length of level
 			{
+				obj_car.canDrive = true;
 				LevelReset() // Disables all obstacles
 				PlayLevel1Audio()
 				PlayCarAudio()
@@ -31,6 +32,8 @@ switch (currentLevel)
 		{
 			if (!levelTimerReset)
 			{
+				obj_phone.y = obj_phone.startY;
+				obj_car.canDrive = true;
 				LevelReset()
 				PlayLevel2Audio()
 				PlayCarAudio()
@@ -55,6 +58,8 @@ switch (currentLevel)
 		{
 			if (!levelTimerReset)
 			{
+				obj_car.canDrive = true;
+				obj_phone.y = obj_phone.startY;
 				LevelReset()
 				PlayLevel3Audio()
 				PlayCarAudio()
@@ -79,6 +84,8 @@ switch (currentLevel)
 		{
 			if (!levelTimerReset)
 			{
+				obj_phone.y = obj_phone.startY;
+				obj_car.canDrive = true;
 				LevelReset()
 				PlayLevel4Audio()
 				PlayCarAudio()

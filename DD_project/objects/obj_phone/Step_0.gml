@@ -29,7 +29,7 @@ if (phoneActive && obj_levelmanager.playing)
 
 	//if the phone timer has run out, is not returning, and travel time is greater than duration
 	// initiate the bezier curve for phone arrival
-	if(phoneTimer <= 0 && travelTime < travelDuration && !returning)
+	if(phoneTimer <= 0 && travelTime < travelDuration && !returning && !obj_doomscroll.doomscrolling)
 	{
 		calling = true;
 		obj_car.canDrive = false;
@@ -48,10 +48,11 @@ if (phoneActive && obj_levelmanager.playing)
 		 2 * (1 - t) * t * controlY +
 		 power(t, 2) * endY;
 	}
+	else if (obj_doomscroll.doomscrolling) {phoneTimer = irandom_range(minPhoneTimer * 20, maxPhoneTimer * 20);}
 	//reverse bezier curve logic
 	if (returning)
 	{
-		calling = false;
+	  calling = false;
 	  travelTime += delta_time / 1000000;
 	
 	  var t = clamp(travelTime / travelDuration, 0, 1);

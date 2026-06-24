@@ -17,6 +17,7 @@ switch (Button_ID)
 			obj_phone.returning = true;
 			obj_bugmoth.x = 4800; obj_bugmoth.y = 440;
 			obj_phone.calling = false;
+			obj_phone.entertainmentIncrease = false;
 			audio_play_sound(snd_car,1,true);
 			with (obj_banner) // Hides banner
 			{
@@ -59,6 +60,7 @@ switch (Button_ID)
 				obj_levelmanager.currentLevel++;
 				obj_levelmanager.playing = true;
 				obj_phone.calling = false;
+				obj_phone.entertainmentIncrease = false;
 				audio_play_sound(snd_car,1,true);
 				with (obj_banner) // Hides banner
 				{
