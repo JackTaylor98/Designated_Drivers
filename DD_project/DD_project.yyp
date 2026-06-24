@@ -69,6 +69,7 @@
     {"id":{"name":"obj_tirednessBar","path":"objects/obj_tirednessBar/obj_tirednessBar.yy",},"order":1,},
     {"id":{"name":"snd_crash4","path":"sounds/snd_crash4/snd_crash4.yy",},"order":6,},
     {"id":{"name":"obj_entertainmentBar","path":"objects/obj_entertainmentBar/obj_entertainmentBar.yy",},"order":0,},
+    {"id":{"name":"snd_radioTrack4","path":"sounds/snd_radioTrack4/snd_radioTrack4.yy",},"order":15,},
     {"id":{"name":"obj_gameoverbutton","path":"objects/obj_gameoverbutton/obj_gameoverbutton.yy",},"order":1,},
     {"id":{"name":"snd_introRadio","path":"sounds/snd_introRadio/snd_introRadio.yy",},"order":2,},
     {"id":{"name":"spr_tirednessFront","path":"sprites/spr_tirednessFront/spr_tirednessFront.yy",},"order":5,},
@@ -106,6 +107,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fonts","folderPath":"folders/Fonts.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy","order":0,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"EffectsObjects","folderPath":"folders/Objects/EffectsObjects.yy","order":11,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GameObjects","folderPath":"folders/Objects/GameObjects.yy","order":5,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GameOverUIObjects","folderPath":"folders/Objects/GameOverUIObjects.yy","order":9,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GameUIObjects","folderPath":"folders/Objects/GameUIObjects.yy","order":10,},
@@ -124,7 +126,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"CarSprites","folderPath":"folders/Sprites/MainMenuUISprites/CarSprites.yy","order":3,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":0,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"EffectsObjects","folderPath":"folders/Objects/EffectsObjects.yy","order":11,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

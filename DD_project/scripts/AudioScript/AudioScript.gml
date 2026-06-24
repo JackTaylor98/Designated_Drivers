@@ -15,6 +15,10 @@ function PlayLevel3Audio()
 {
 	audio_play_sound(snd_radioTrack3,10,false);
 }
+function PlayLevel4Audio()
+{
+	audio_play_sound(snd_radioTrack4,10,false);
+}
 
 // plays sound when object is on screen stops when off screen
 function PlayBugSound()

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_radioTrack3",
+  "name": "snd_radioTrack4",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_radioTrack3.wav",
-  "duration": 18.220045,
+  "soundFile": "snd_radioTrack4.wav",
+  "duration": 31.934355,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

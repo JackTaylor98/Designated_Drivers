@@ -80,6 +80,7 @@ switch (currentLevel)
 			if (!levelTimerReset)
 			{
 				LevelReset()
+				PlayLevel4Audio()
 				PlayCarAudio()
 				levelTimer = 0;
 				levelTimerReset = true;
