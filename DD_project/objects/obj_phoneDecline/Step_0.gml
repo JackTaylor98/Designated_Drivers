@@ -13,6 +13,8 @@ if(!disableCollision)
 				travelTime = 0;
 				returning = true;
 			}
+			visible = false;
+			obj_phonePickUp.visible = false;
 		}
 	}	
 }

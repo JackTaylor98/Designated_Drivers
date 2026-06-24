@@ -6,6 +6,7 @@
     {"id":{"name":"spr_distractionBack","path":"sprites/spr_distractionBack/spr_distractionBack.yy",},"order":2,},
     {"id":{"name":"obj_car","path":"objects/obj_car/obj_car.yy",},"order":0,},
     {"id":{"name":"obj_distractionBar","path":"objects/obj_distractionBar/obj_distractionBar.yy",},"order":2,},
+    {"id":{"name":"spr_doomscrolling","path":"sprites/spr_doomscrolling/spr_doomscrolling.yy",},"order":14,},
     {"id":{"name":"obj_phone","path":"objects/obj_phone/obj_phone.yy",},"order":2,},
     {"id":{"name":"obj_bugseffect","path":"objects/obj_bugseffect/obj_bugseffect.yy",},"order":0,},
     {"id":{"name":"FontMedium","path":"fonts/FontMedium/FontMedium.yy",},"order":2,},

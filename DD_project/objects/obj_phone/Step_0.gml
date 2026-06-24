@@ -51,6 +51,7 @@ if (phoneActive && obj_levelmanager.playing)
 	//reverse bezier curve logic
 	if (returning)
 	{
+		calling = false;
 	  travelTime += delta_time / 1000000;
 	
 	  var t = clamp(travelTime / travelDuration, 0, 1);
@@ -65,7 +66,7 @@ if (phoneActive && obj_levelmanager.playing)
 		if (t >= 1)
 		{
 			returning = false;
-			calling = false;
+			
 			travelTime = 0;
 			phoneTimer = irandom_range(minPhoneTimer * 60, maxPhoneTimer * 60);
 			y = startY;
@@ -77,8 +78,15 @@ if (phoneActive && obj_levelmanager.playing)
 			obj_phonePickUp.disableCollision = false;
 			obj_phoneDecline.visible = true;
 			obj_phonePickUp.visible = true;
-			image_index = 0;
 			obj_car.canDrive = true;
 		}
 	}
 }
+if returning {image_index = 1;}
+
+if (obj_doomscroll.doomscrolling) {sprite_index = spr_doomscrolling;}
+else {sprite_index = spr_phone; image_index = 1;}
+
+
+if calling {image_index = 0;}
+if obj_phonePickUp.buttonPressed {image_index = 2;}

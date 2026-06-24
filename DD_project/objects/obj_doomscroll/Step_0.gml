@@ -60,8 +60,6 @@ with (obj_phone)
 		 power(1 - t, 2) * startY +
 		 2 * (1 - t) * t * controlY +
 		 power(t, 2) * endY;
-			 
-		image_index = 2;
 	}
 }	
 }

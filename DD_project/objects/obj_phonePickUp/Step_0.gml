@@ -15,7 +15,6 @@ if(!disableCollision)
 			conversationTimer = 5*60;
 			buttonPressed = true;
 			
-			obj_phone.image_index = 1;
 			obj_phoneDecline.visible = false;
 			visible = false;
 		}
@@ -34,6 +33,7 @@ if(buttonPressed)
         {
             travelTime = 0;
             returning = true;
+			image_index = 1;
         }
 		buttonPressed = false;
 	}
