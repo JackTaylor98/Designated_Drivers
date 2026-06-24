@@ -84,9 +84,11 @@ if (phoneActive && obj_levelmanager.playing)
 }
 if returning {image_index = 1;}
 
-if (obj_doomscroll.doomscrolling) {sprite_index = spr_doomscrolling;}
-else {sprite_index = spr_phone; image_index = 1;}
-
+if (instance_exists(obj_doomscroll))
+{
+	if (obj_doomscroll.doomscrolling) {sprite_index = spr_doomscrolling;}
+	else {sprite_index = spr_phone; image_index = 1;}
+}
 
 if calling {image_index = 0;}
 if obj_phonePickUp.buttonPressed {image_index = 2;}
